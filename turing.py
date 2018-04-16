@@ -52,8 +52,8 @@ class TuringMachine(object):
     def step(self):
         char_under_head = self.__tape[self.__head_position]
         x = (self.__current_state, char_under_head)
-        if x in self.__transition_function:
-            y = self.__transition_function[x]
+        if x in self.transition_function:
+            y = self.transition_function[x]
             self.__tape[self.__head_position] = y[1]
             if y[2] == 'R':
                 self.__head_position += 1
