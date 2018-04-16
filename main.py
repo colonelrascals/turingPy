@@ -16,7 +16,7 @@ t = TuringMachine('010011 ', inital_state='init',
 
 print('Input on Tape;\n'+t.get_tape())
 
-while not t.final();
+while not t.final():
     t.step()
 print('Result of Turning Machine Calculation:')
 print(t.get_tape())
