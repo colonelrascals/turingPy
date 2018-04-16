@@ -14,7 +14,7 @@ t = TuringMachine('010011 ', inital_state='init',
                   final_states=final_states, 
                   transition_function=transition_function)
 
-print('Input on Tape;\n'+t.get_tape())
+print('Input on Tape:\n'+t.get_tape())
 
 while not t.final():
     t.step()
